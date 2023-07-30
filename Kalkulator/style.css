@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.calc {
+    display: grid;
+    grid-template-areas: 
+    'display display display'
+    'buttons buttons buttons';
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-40%,-10%);
+    height: 50vh;
+    width: 60vw;
+    background-color: gray;
+    grid-template-rows: 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+div.display {
+    display: grid;
+    grid-area: display;
+    grid-template-columns: 1fr;
+    justify-items: end;
+    align-content: center;
+    padding: 40px 40px;
+    background-color: black;
+    color: white;
+    font-size: 40px
+}
+div.button {
+    display: grid;
+    grid-area: buttons, buttons, buttons;
+    background-color: beige;
+    justify-content: center;
+    align-content: center;
+    font-size: 24px;
+    border: 1px solid black;
+}
+div.AC {
+    grid-column: 2/4;
+}
