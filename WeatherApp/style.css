@@ -23,6 +23,7 @@ body {
   background-color: #2f0f26;
   min-width: 435px;
   max-width: 699px;
+  box-shadow: 8px 10px 24px 8px #2f0f26;
 }
 .wrapper::before {
   content: "";
