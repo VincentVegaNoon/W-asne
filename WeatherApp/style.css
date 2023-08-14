@@ -23,6 +23,8 @@ body {
   background-color: #2f0f26;
   min-width: 435px;
   max-width: 699px;
+  min-height: 690px;
+  max-height: 900px;
   box-shadow: 8px 10px 24px 8px #2f0f26;
 }
 .wrapper::before {
@@ -33,43 +35,51 @@ body {
 }
 header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-around;
   height: 10vh;
 }
-header h1 {
-  font-size: 44px;
-  text-align: center;
-}
-header h2 {
-  font-size: 34px;
-  text-align: center;
-}
-header h3 {
+.search {
+  display: flex;
+  width: 100%;
   font-size: 24px;
-  text-align: center;
+  justify-content: center;
 }
-
+input {
+  background-color: #feeac7;
+  border: 0;
+  font-size: 24px;
+  margin-left: 5%;
+}
+input:focus {
+  outline: none;
+}
+button {
+  background-color: #feeac7;
+  border: 0;
+  font-size: 24px;
+}
 .info {
   display: flex;
   flex-direction: column;
   color: white;
   margin: 5%;
 }
-section.day {
+section.condition {
   border-bottom: 2px solid white;
 }
-section.day + section.day + section.day {
+section.condition + section.condition + section.condition {
   border-bottom: 0px solid white;
 }
-.day {
+.temp.condition {
+  display: flex;
+  flex-direction: row;
+}
+.condition {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-}
-.temp {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  font-size: 28px;
 }
